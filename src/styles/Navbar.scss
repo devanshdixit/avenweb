@@ -1,0 +1,81 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.section1-bg {
+  background: #e9810b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e6a861,
+    #e67a00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e6a861,
+    #e9810b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section2-bg {
+  background: #e9810b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e6a861,
+    #e67a00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e6a861,
+    #e9810b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+@media screen and (min-width: 800px) {
+  .footercontainermain {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+  }
+}
+
+.sociallink:hover {
+  opacity: 0.4;
+  transition: all 0.1s linear;
+}
+.headerlink {
+  color: #ffffff !important;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  padding-left: 0.3em;
+  padding-bottom: 0.2em;
+  transition-duration: 0.3s;
+  cursor: pointer;
+  position: relative;
+  font-family: Inter, sans-serif;
+  line-height: 24px;
+}
+
+.imgsize {
+  width: 80px;
+  height: 80px;
+}
+.imganimate{
+  transform: translatey(0px);
+	animation: float 5s ease-in-out infinite;
+}
+.headerlink:hover {
+  color: rgb(165, 160, 160);
+  font-size: 18px;
+  transition-duration: 0.5s;
+}
+
+
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
