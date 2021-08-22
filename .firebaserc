@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "unique-nuance-310113"
+  },
+  "targets": {
+    "unique-nuance-310113": {
+      "hosting": {
+        "avenweb": [
+          "avenweb"
+        ]
+      }
+    }
   }
 }
