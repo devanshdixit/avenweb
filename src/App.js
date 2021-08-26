@@ -1,10 +1,10 @@
 import "./App.css";
-import Nabvar from "./Components/Navbar";
 import React from "react";
+import Header from "./Components/Navbar";
 function App() {
   return (
     <>
-      <Nabvar />
+      <Header/>
       <section id="secion1" className="section1-bg pb-4 pt-4">
         <div className="container text-center">
           <div className="row" style={{ alignItems: "center" }}>

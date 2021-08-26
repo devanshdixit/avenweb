@@ -11983,7 +11983,7 @@ fieldset:disabled .btn {
 }
 
 .headerlink {
-  color: #ffffff !important;
+  color: black;
   letter-spacing: 0.08em;
   font-weight: 500;
   padding-left: 0.3em;
@@ -11994,6 +11994,8 @@ fieldset:disabled .btn {
   position: relative;
   font-family: Inter, sans-serif;
   line-height: 24px;
+  text-decoration: none;
+  border-bottom: none;
 }
 
 .imgsize {
@@ -12009,10 +12011,11 @@ fieldset:disabled .btn {
 }
 
 .headerlink:hover {
-  color: #a5a0a0;
   font-size: 18px;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  color: black;
+  border-bottom: black 0.125em solid;
+  -webkit-transform: all 1s linear;
+          transform: all 1s linear;
 }
 
 @-webkit-keyframes float {
