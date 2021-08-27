@@ -1,12 +1,13 @@
 import "./App.css";
 import React from "react";
 import Header from "./Components/Navbar";
+import { Link } from "react-router-dom";
 function App() {
   return (
     <>
       <Header/>
       <section id="secion1" className="section1-bg pb-4 pt-4">
-        <div className="container text-center">
+        <div className="container text-center mb-4 pb-4">
           <div className="row" style={{ alignItems: "center" }}>
             <div className="col-md-6">
               <h1
@@ -27,6 +28,7 @@ function App() {
               />
             </div>
           </div>
+          <a target="_" href="https://play.google.com/store/apps/details?id=com.bitcc.revapp" className=" mb-4"><img src={`${process.env.PUBLIC_URL}/images/android.png`} alt="" /></a>
         </div>
       </section>
       <section id="section2" className="section2-bg pb-4 pt-4">
@@ -90,14 +92,17 @@ function App() {
                         <div className="p-2"><a className="sociallink" href="https://twitter.com/quescup?s=08"><img src={`${process.env.PUBLIC_URL}/images/social/twitter.svg`} style={{ width: "2em", marginRight: ".5rem" }} alt="" /></a></div>
                         <div className="p-2"><img className="sociallink" src={`${process.env.PUBLIC_URL}/images/social/youtube.svg`} style={{ width: "2em", marginRight: ".5rem" }} alt="" /></div>
                     </div>
-                    <div className="d-flex flex-wrap justify-content-center pb-4 pt-4 mt-3 mb-3">
+                    <div className="text-center">
+                    <a target="_" href="https://play.google.com/store/apps/details?id=com.bitcc.revapp" className=" mb-4"><img src={`${process.env.PUBLIC_URL}/images/android.png`} alt="" /></a>
+                    </div>
+                    <div className="d-flex flex-wrap justify-content-center pb-2 pt-2 mt-3 mb-3">
                         <div className="p-2 ml-3">Terms & Condition</div>
                         <div className="p-2 " style={{ marginLeft: "40px", marginRight: "40px" }}>Privacy Policy</div>
                         <div className="p-2 mr-3">Community Guidelines</div>
                     </div>
                 </div>
                 <div className="container-fluid " style={{ backgroundColor: "#e9810b" }}>
-                    <div className="text-center mt-4 pt-4 pb-4">@DapperDak. All rights Reserved</div>
+                    <div className="text-center mt-4 pt-4 pb-4">@AvenRide Inc. All rights Reserved</div>
                 </div>
             </div>
         </footer>
