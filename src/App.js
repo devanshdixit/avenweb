@@ -1,7 +1,6 @@
 import "./App.css";
 import React from "react";
 import Header from "./Components/Navbar";
-import { Link } from "react-router-dom";
 function App() {
   return (
     <>
