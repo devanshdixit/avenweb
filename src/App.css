@@ -345,6 +345,34 @@
    padding: 8px;
 }
 
+/* popup */
+.popup {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgb(255, 255, 255);
+   width: 100vw;
+   height: 100vh;
+}
+
+.popup p {
+   font-size: 20px;
+}
+
+.popup .card {
+   height: 500px;
+   width: 400px;
+   background: rgb(255, 217, 0);
+}
+
+.popup .card-img-top {
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   margin-top: 20px;
+   margin-left: 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
    .App-logo {
       animation: App-logo-spin infinite 20s linear;

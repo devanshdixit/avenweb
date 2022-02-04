@@ -1,8 +1,16 @@
 import { collection, addDoc } from 'firebase/firestore'
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { db } from '../config/firebase'
+import Popup from './Popup'
 
 const Confirm = ({ values }) => {
+   const [popUp, setPopUp] = useState(false)
+
+   useEffect(() => {
+      setTimeout(() => {
+         setPopUp(true)
+      }, 3000)
+   }, [])
    const dbRef = collection(db, 'ridersWeb')
    const {
       firstName,
@@ -26,7 +34,6 @@ const Confirm = ({ values }) => {
          lastName: lastName,
          email: email,
          number: number,
-
          accHolderName: accHolderName,
          bankName: bankName,
          accNumber: accNumber,
@@ -53,6 +60,7 @@ const Confirm = ({ values }) => {
          >
             Your data has been sent successfully!!
          </h2>
+         {popUp && <Popup setPopUp={setPopUp} />}
          <ul
             className="list-group"
             style={{ maxWidth: '600px', margin: 'auto' }}
