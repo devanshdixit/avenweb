@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.section1-layout {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.section-layout {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.section3-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+.section3-subtitle {
+  font-size: 28px;
+}
+.slide__order {
+  border: 1px solid #ff9700;
+  color: #ff9700;
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+  padding-bottom: 0.125rem;
+  margin-top: 1.5rem;
+}
+.section4-head {
+  letter-spacing: -0.5px;
+  margin-bottom: 0.9375rem;
+  margin-top: 0.9375rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
